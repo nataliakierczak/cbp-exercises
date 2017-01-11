@@ -1,5 +1,9 @@
 body {
     background-color:#B0C4DE 	;
+  font-family: 'Pacifico', cursive;
+}
+h1,h2,h3 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 span {
     color: red;
@@ -7,12 +11,24 @@ span {
 }
 h1 {
     color: blue;
+    font-size: 4.5em;
+    font-weight: normal; 
+}
+h2 {
+font-variant: small-caps;
 }
 a {
     font-weight: bold;
 }
 p {
-    background-color: rgba(0,0,0,0.5)
+    background-color: rgba(0,0,0,0.5);
+    line-height: 1.2em;
+    font-size: 16 px;
+    border: 2 px solid red;
+    
+}
+p a {
+    font-size: 1.5em;
 }
 span{
     background-color: #ADD8E6;

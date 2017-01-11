@@ -1,0 +1,20 @@
+#First {
+border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#Second {
+    border-style: dotted;
+    border-width: 10px;
+    border-color:blue;
+}
+#Third {
+    border-style: solid;
+    border-color:green;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-right-width: 1px;
+    border-left-width: 0px;
+
+}
+
