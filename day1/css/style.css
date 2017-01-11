@@ -48,5 +48,5 @@ li.seen.good {
 }
 #biography a:hover {
     text-decoration: underline;
-    color: white;
+    color: red;
 }
