@@ -1,0 +1,51 @@
+body {
+    background-color:#B0C4DE 	;
+}
+span {
+    color: red;
+    font-weight: bold;
+}
+h1 {
+    color: blue;
+}
+a {
+    font-weight: bold;
+}
+p {
+    background-color: rgba(0,0,0,0.5)
+}
+span{
+    background-color: #ADD8E6;
+}
+/*
+p.red {
+background-color: red;
+}
+p.green{
+background-color: green;
+}
+p.blue{
+background-color: blue;
+}
+*/
+li.seen {
+    color: 	#808080;
+}
+li.unseen {
+    color: 	#B22222;
+}
+a.seen {
+    color: pink;
+}
+a.unseen {
+    color: saddlebrown;
+}
+li.seen.good {
+    color: green;
+}
+#biography a {
+    text-decoration: none;
+}
+#biography a:hover {
+    text-decoration: underline;
+}
