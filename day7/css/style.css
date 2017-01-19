@@ -1,0 +1,30 @@
+body {
+  background-color: pink;
+}
+p {
+  font-size: 14px;
+}
+h1,
+h2 {
+  color: #ffff00;
+}
+section {
+  border-bottom: 1px solid;
+  border-color: #008000;
+}
+.shadowed {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p,
+img {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.first a {
+  text-decoration: none;
+}
+.first p {
+  background-color: red;
+}
+.first p a {
+  color: #008000;
+}

@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {box-sizing: border-box}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+    background-color: grey;
+}
+.A {
+    float: left;
+    border: 10px solid deeppink;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 10px;
+    background-color: white;
+
+}
+.B {float: left;
+    border: 10px solid blue;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 10px;
+    background-color: green;}

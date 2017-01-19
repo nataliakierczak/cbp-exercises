@@ -1,0 +1,8 @@
+
+
+@mixin nice_line_spacing($font_size) {
+  line-height:  $font_size*2
+}
+p {
+    @include nice_line_spacing(14px);
+}

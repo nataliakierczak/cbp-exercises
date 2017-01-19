@@ -1,0 +1,23 @@
+.outer {
+margin: 1em;
+padding: 3em;
+border: 1px solid green;
+background: linear-gradient(-90deg, red, yellow);
+position: relative;
+}
+.inner {
+background-color:rgba(140,30,180,0.4);
+padding: 1em;
+border: 1px solid red;
+position: relative;
+z-index: 1;
+}
+.green {
+    position: absolute;
+  right: 0;
+    top: 0;
+width: 50%;
+height: 100%;
+background-color: lawngreen;
+z-index: 0;
+}

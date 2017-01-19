@@ -1,0 +1,36 @@
+@main_color: yellow;
+@highlight_color:green;
+@bottom_border: 1px solid;
+@any_favourite_font_size: 14px;
+
+body {
+    background-color: pink;
+}
+
+p{
+    font-size: @any_favourite_font_size;
+}
+h1, h2 {
+    color: @main_color;
+}
+section {
+    border-bottom: @bottom_border;
+   border-color:  @highlight_color;
+}
+.shadowed {
+box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p, img {
+    .shadowed;
+}
+.first {
+    a {
+text-decoration: none;
+    }
+    p {
+        background-color: red;
+        a {
+            color: @highlight_color;
+        }
+    }
+}

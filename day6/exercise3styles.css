@@ -1,0 +1,15 @@
+.nebula {
+    width:100%;
+    color: white;
+    padding: 20px 0 px 20 px 0 px;
+     background-image: url('nebula.jpg');
+ background-repeat: no-repeat;
+ background-position: center center; 
+} 
+ ul 
+{
+    list-style-type: none
+}
+ul ul {
+    list-style-image: url('bullet.png'); 
+}
