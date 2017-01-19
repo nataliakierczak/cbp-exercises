@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
+  background-color: grey;
   font-family: sans-serif;
 }
-h1 {
-  color: pink;
+@media screen and (min-width: 400px) {
+  body {
+    background-color: darkslateblue;
+  }
+  h1 {
+    color: green;
+  }
 }
 p {
   font-family: serif;
