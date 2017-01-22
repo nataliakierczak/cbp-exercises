@@ -3,21 +3,7 @@
 *:after {
   box-sizing: border-box;
 }
-body {
-  background-color: grey;
-  font-family: sans-serif;
-}
-@media screen and (min-width: 400px) {
-  body {
-    background-color: darkslateblue;
-  }
-  h1 {
-    color: green;
-  }
-}
-p {
-  font-family: serif;
-  color: yellow;
-}
+/*@import "style.less";
+@import "paragraph.less";*/
 
 /*# sourceMappingURL=index.css.map */
