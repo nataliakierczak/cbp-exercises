@@ -1,0 +1,45 @@
+body {
+    margin:0;
+    padding-top:2em;
+}
+
+nav {
+    background-color: darkmagenta;
+    color:white;
+    padding: 0.5em;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+section {
+    width:800px;
+    margin:0 auto;
+}
+nav a {
+    color:#ffffff;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav .links {
+    float:right;
+}
+nav .links > div {
+    display: inline-block;
+    margin: 0 0.5em;
+    position:relative;
+}
+nav .submenu {
+ position: absolute;
+ background-color: darkorange;
+ color: #000000;
+ padding: 1em;
+ right:0;
+ top:100%;
+ display:none;
+}
+   nav .links > div:hover .submenu {
+       display:block;
+   }

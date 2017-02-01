@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<body>
+      <button id="black_button">Black</button >
+  <button id="silver_button">Silver</button >
+  <button id="red_button">Red</button >
+  <button id="pink_button">Pink</button >
+  <button  id="lime_button" onclick="document.body.style.backgroundColor = 'lime';">Lime</button >
+ <button  id="white_button">White</button >
+
+<p>Test test test</p>
+
+ <script>
+     document.body.style.backgroundColor = "blue";
+
+     var black = document.getElementById('black_button');//find black button
+black.addEventListener("click", function() { //attach an event to...
+ document.body.style.backgroundColor = 'black';//change the color within the whole body to black
+  document.body.style.color = 'white';//change the font color within the whole body to white
+});
+
+var pink = document.getElementById('pink_button');
+pink.onclick = function () {
+    document.body.style.backgroundColor = 'pink';
+};
+
+
+function my_function () {
+    //code
+}
+
+
+ </script>
+</body>
+</html>
