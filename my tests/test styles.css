@@ -1,0 +1,14 @@
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: RoyalBlue ;
+}
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+p,li {
+    font-family: 'Roboto Slab', serif;
+    }
+body {
+    background-color:#FFFE9D;
+}

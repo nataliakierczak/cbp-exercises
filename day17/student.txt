@@ -27,3 +27,17 @@ student:
 
      past_education: string
     grades: string
+
+school:
+id:
+
+
+
+school_has_student:
+	school_id:
+		foreign_table: school
+		reference in the foreign table: id //referencing to other table
+	student_id:
+
+
+

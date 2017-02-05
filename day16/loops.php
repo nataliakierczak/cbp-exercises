@@ -4,8 +4,9 @@ while($iterator < 3)
 {
     $iterator ++;
     echo $iterator . '<br>';
-}
-*/
+}*/
+
+
 
 /*$iterator = 0;
 do {
@@ -59,3 +60,5 @@ if (++$iterator <1); -> false
     <?php endfor; ?>
 </ul>
 </body>
+
+<?php var_dump("Hello world"); ?>

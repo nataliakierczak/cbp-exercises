@@ -34,12 +34,12 @@ insert_data($data);
 
 <form action="" method="post">
 
-Product: 
-<input type= "text" name="product">
+Title: 
+<input type= "text" name="title">
 <br><hr>
 
-Feedback: 
-<input type= "text" name="feedback">
+Text: 
+<input type= "text" name="text">
 <br><hr>
 
 <input type="checkbox" name="Really" id="really" checked>
