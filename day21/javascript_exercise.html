@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two buttons</title>
+</head>
+<body>
+
+    <button id="red"  onclick="document.body.style.backgroundColor = 'red';">red</button>
+    <button id="blue">blue</button>
+
+    <script>
+function set_background(color) {
+blue = document.getElementById('blue');
+blue.addEventListener("click", function(){
+document.body.style.backgroundColor = 'blue';})}
+set_background('blue');
+
+
+
+
+    </script>
+    
+</body>
+</html>

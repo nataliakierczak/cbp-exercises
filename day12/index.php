@@ -50,9 +50,9 @@ $result = $number % 2 == 0 ? 'even' : 'odd';
 echo $result;
 }
 
-$number_to_test = 14;
+$number = 14;
   ?>
 
-  The number <?php echo $number_to_test;?> is <?php echo print_is_even($number_to_test); ?>
+  The number <?php echo $number;?> is <?php echo print_is_even($number); ?>
 </body>
 </html>

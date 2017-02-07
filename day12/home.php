@@ -14,6 +14,8 @@ require_once 'functions.php';
     <div class="main">
         <h1>The landing page</h1>
 
+
+
         <p>A <?php echo get_current_year();?> version </p>
 
         <p>Nulla adipisicing nulla nisi eu in qui reprehenderit exercitation cillum Lorem. Irure veniam aliqua est do velit dolor esse. Sint aute velit cillum ullamco cupidatat. Esse excepteur officia Lorem nostrud cillum est incididunt nostrud id ipsum ex. Non proident sint nisi consectetur excepteur incididunt fugiat laborum enim sit deserunt irure.</p>
@@ -24,5 +26,7 @@ require_once 'functions.php';
     </div>
 
    <?php include 'footer.php'; ?>
+
+   
 </body>
 </html>

@@ -19,7 +19,7 @@ function do_something_risky() {
 $new_messages = do_something_risky();
 
 //merge two multidimensional arrays into one
-$merged_messages = array_merge (, $new_messages);
+$merged_messages = array_merge ($new_messages);
 ?>
 
 

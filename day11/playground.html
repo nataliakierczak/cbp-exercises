@@ -41,8 +41,22 @@
     cursor: pointer;
 }
 #toggle.clicked {
-    background-color: violet;
+    background-color: red;
 }
+
+#toggle2 {
+    display: inline-block;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: teal;
+    color: #ffffff;
+    cursor: pointer;
+}
+#toggle2.clicked2 {
+    background-color: yellow;
+    color:black;
+}
+
 
   </style>
 
@@ -62,6 +76,8 @@
   </div>
 
   <div id="toggle">test button</div>
+  <div id="toggle2">test button2</div>
+
 
  <div id="mousepos">
         <div>X: <span id="mousepos_x"></span></div>
@@ -72,10 +88,19 @@
 
 <script>
 
-var toggle=$('#toggle');
+var toggle= $('#toggle');
+
 toggle.on('click', function () {
-  console.log(this).addClass('clicked');
+  $(this).addClass('clicked');
 });
+
+
+var toggle2= $('#toggle2');
+
+toggle2.on('click', function () {
+  $(this).addClass('clicked2');
+});
+
 
 
 var body=$(document.body);
@@ -115,7 +140,7 @@ document.getElementById(id_of_element).innerHTML = text_string;
 }
 
 change_any_element ('heading', 'Functions are already here!');
-
+change_any_element ('heading', 'time to change title!');
 
 /**
  * logs the type of a given value*

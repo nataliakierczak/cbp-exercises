@@ -5,19 +5,19 @@
     <title>Events</title>
 </head>
 <body>
-      <button id="black_button">Black</button >
-  <button id="silver_button">Silver</button >
-  <button id="red_button">Red</button >
+  <button id="black_button">Black</button >
+  <button id="silver_button" onclick="document.body.style.backgroundColor = '#665432';">Silver</button >
+  <button id="red_button"  onclick="document.body.style.backgroundColor = 'red';">Red</button >
   <button id="pink_button">Pink</button >
-  <button  id="lime_button" onclick="document.body.style.backgroundColor = 'lime';">Lime</button >
- <button  id="white_button">White</button >
+  <button id="lime_button" onclick="document.body.style.backgroundColor = 'lime';">Lime</button >
+  <button id="white_button">White</button >
 
 <p>Test test test</p>
 
  <script>
      document.body.style.backgroundColor = "blue";
 
-     var black = document.getElementById('black_button');//find black button
+var black = document.getElementById('black_button');//find black button
 black.addEventListener("click", function() { //attach an event to...
  document.body.style.backgroundColor = 'black';//change the color within the whole body to black
   document.body.style.color = 'white';//change the font color within the whole body to white
@@ -28,6 +28,11 @@ pink.onclick = function () {
     document.body.style.backgroundColor = 'pink';
 };
 
+var white = document.getElementById('white_button');//find black button
+white.addEventListener("click", function() { //attach an event to...
+ document.body.style.backgroundColor = 'white';//change the color within the whole body to black
+  document.body.style.color = 'red';//change the font color within the whole body to white
+});
 
 function my_function () {
     //code
