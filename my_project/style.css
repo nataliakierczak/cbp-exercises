@@ -1,0 +1,32 @@
+body {
+    background-color:lightgoldenrodyellow;
+}
+h1 {
+    color:seagreen;
+    font-size: 3em;
+    text-align: center;
+}
+
+.block {
+    display:flex;
+    
+   
+}
+nav {
+   background-color: darkgrey;
+}
+.products {
+    background-color: yellow;
+   margin:3em;
+   padding: 1em;
+   
+}
+.categories {
+    background-color: orange;
+     margin:3em;
+     padding: 1em;
+     
+}
+.about_us {
+  clear:both;
+}
