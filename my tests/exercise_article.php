@@ -1,7 +1,5 @@
 <?php 
 
-$post = $_POST;
-
 $form = array(
     'title' => 'Article title',
     'article' => 'Lorem Ipsum'
@@ -10,21 +8,22 @@ $form = array(
 // checking for errors
 $errors = [];
 
-if (empty($post['title'])) {
+if (empty($_POST['title'])) {
   $errors['title'] = "Please fill-in the title";
 }
 
-if (empty($post['article'])) {
+if (empty($_POST['article'])) {
   $errors['article'] = "Please fill-in the article";
 }
+
 
 //validation - not to sent if empty
 
 /*if (empty($form['title']) || empty($form['article']) ) {
     echo 'Please insert the fields';
      };
-    return false;
-   */
+    return false;*/
+   
 
 ?>
 
@@ -51,9 +50,9 @@ if (empty($post['article'])) {
 
 
 <h1>Form</h1>
-<form action="exercise_article.php" method="post">
+<form method="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
 Title:
-<?php if (empty($post['title'])) { ?>
+<?php if (empty($_POST['title'])) { ?>
       <?php echo $errors['title']; ?>
 <?php } ?>
 <input type= "text" name="title">
@@ -61,7 +60,7 @@ Title:
 
 
 Article: 
-<?php if (empty($post['article'])) {?>
+<?php if (empty($_POST['article'])) {?>
 <?php echo $errors['article']; ?>
 <?php } ?>
 <textarea name="article"></textarea>
