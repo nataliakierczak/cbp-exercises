@@ -5,7 +5,15 @@ require_once('./shared/database.php');
 $db=new Database();
 $products = $db->getproducts();
 
-echo htmlspecialchars($db->getuser($_SESSION['userid'])['name']);
+if($_POST){
+    if(!isset($_SESSION['products'])){
+        $_SESSION['products']= [];
+    }
+    $_SESSION['products'][] = $_POST['id'];
+    header('Location: index.php');
+}
+
+require './shared/header.php';
 ?>
 <h1>Page for users to select products</h1>
 <?php
@@ -16,9 +24,13 @@ foreach($products as $product) {
     echo'Price: ' . htmlspecialchars($product['price']) . '<br>';
     echo'Size: ' . htmlspecialchars($product['size']) . '<br>';
     echo'Color: ' . htmlspecialchars($product['color']) . '<br><hr>';
-    echo '<form action="summary.php" method="post">'
+    echo '<form action="" method="post">'
     . '<input type="hidden" name="id" value=" ' . htmlspecialchars($product['id']) . '">'
     . ' <input type="submit" value="Buy this">'
     . '</form><hr>';
 }
 ?>
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <button id="btn1" onclick="myFunction()">Click me!</button>
+  <button id="btn2">Click me!</button>
+
+    <script>
+
+//function without brackets- passing reference to this function (brackets mean that this function must be executed)
+document.getElementById('btn2').onclick = myFunction;
+
+    function myFunction() {
+        alert ('Well done!')
+    }
+         </script>
+    
+</body>
+</html>

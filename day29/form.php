@@ -8,6 +8,7 @@ if ($_POST)
  $userid= $db->insertuser($_POST['name'], $_POST['email'], $_POST['password']);
   session_start();
   $_SESSION['userid']=$userid;
+  header:('Location:index.php');
 }
 ?>
 

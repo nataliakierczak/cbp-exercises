@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">First content</div>
+
+    <script>
+    alert('');
+      var element=document.getElementById('content');
+
+     element.innerHTML="Java script modified content";
+     element.style.color = "#f00";
+     element.className="class";
+
+     var newElement=document.createElement('div');
+     document.getElementByTagName('body')[0] .appendChild('newElement');
+
+
+
+     //returns name of the tag-div
+    // alert(element.tagName);
+         </script>
+    
+</body>
+</html>
