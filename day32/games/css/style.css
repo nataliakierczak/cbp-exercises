@@ -1,0 +1,33 @@
+body{
+    background-color: cadetblue;
+}
+.game{
+    background-color: lightgrey;
+    margin:1em;
+    position: relative;
+    display:flex;
+    padding:0.5em;
+}
+.game .info .name{
+    font-size:2em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+.game .info .release{
+    font-size:1em;
+}
+.game .info .rating{
+    position:absolute;
+    top:0.5em;
+    right:0.5em;
+    font-size: 1.5em;
+    color:cornflowerblue;
+    font-weight: bold; 
+}
+.game img{
+    float:left;
+    margin: 0.5em;
+}
+.game .description{
+    padding-right:0.5em;
+}
