@@ -1,0 +1,38 @@
+<img class="avatar" src="http://classes.codingbootcamp.cz/assets/classes/tests/4/avatar.jpg" alt="avatar" />
+
+<style>
+img {
+    border-radius: 50%;
+    width:64px;
+    height:64px;
+}
+img:hover {
+    border-radius:5px;
+    transition-duration: 0.5s;
+}
+</style>
+
+
+<ul id="all_tasks">
+  <li class="task done">Wake up</li>
+  <li class="task done">Get up</li>
+  <li class="task">Have breakfast</li>
+  <li class="task done">Go to school</li>
+  <li class="task done">Start test</li>
+  <li class="task">Finish test</li>
+</ul>
+
+<ul id="done_tasks">
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+$(function() {
+    $( ".done" );
+    $('#done_tasks').append($(".done") );
+  });
+
+
+</script>

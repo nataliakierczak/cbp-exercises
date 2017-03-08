@@ -1,3 +1,5 @@
+
+
 @extends ('layouts/basic')
 
 @section ('title', 'My blog')
@@ -9,3 +11,4 @@
 
 
 @endsection
+
