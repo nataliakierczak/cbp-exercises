@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+    <label>
+        How much? (in thousands)
+         <br>
+         <input type="number"  min="1000" max="100000" step="100" name="how_much" value="1000"  autofocus required>
+        <br>
+        
+    </label>
+
+Why do you need it? (at least 10 characters)
+<br>
+<input type="text" placeholder="I need it to buy a flower…" name="why" pattern=".{10,}" required>
+<br>
+E-mail
+<br>
+<input type="email" name="email" required>
+<br>
+Message
+<br>
+<textarea name="message"></textarea>
+<br>
+<button type="submit" name="save">Submit form</button>
+<br>
+
+    </form>
+</body>
+</html>
