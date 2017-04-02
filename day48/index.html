@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular exercise</title>
+    <script src="https://code.angularjs.org/latest/angular.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+    <script src="myApp.js"></script>
+    <script src="productList.controller.js"></script>
+    <script src="czCurrency.filter.js"></script>
+</head>
+<body>
+
+<div ng-init="fruits = ['Apple', 'Orange', 'Peach']; letter='o';"></div>
+<input type="text" ng-model="letter">
+<ul>
+    <!--only those including letter O- not case sensetive-both o and O
+      //extra argument - true-exact match; false- not case sensitive, including at least one letter, false is default-->
+    <li ng-repeat="fruit in fruits | filter: letter">
+        {{ fruit }}
+    </li>
+</ul>
+
+<ul ng-controller="productList">
+
+    <select ng-model="order_by">
+        <option value="price">Order by price</option>
+        <option value="name">Order by name</option>
+    </select>
+
+    <li ng-repeat="product in products| orderBy: order_by">
+        <h3>{{product.name}}</h3>
+        <h4>{{product.price | czCurrency}}</h4>
+    </li>
+</ul>
+
+</body>
+</html>

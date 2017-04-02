@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular exercise</title>
+    <script src="https://code.angularjs.org/latest/angular.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+    <script src="myApp.module.js"></script>
+    <script src="studentList.controller.js"></script>
+    <script src="productDetail.controller.js"></script>
+    <script src="greetMe.directive.js"></script>
+</head>
+<body>
+
+<script>
+//create a module my_module
+    var my_module = angular.module('myModule', []);
+
+    //retrieve the created module 'MyModule'
+var module_i_created = angular.module('myModule');
+
+//create a module with dependency on 'ngRoute'- another module that this modul needs to work 
+var another_module = angular.module('moduleWithRouting', ['ngRoute']);
+
+</script>
+
+    <h1>My Angular application</h1>
+
+<div ng-app="myApp" ng-init="name='Natalia'; color='red'">
+    <div ng-app="">
+        The result of the calculation is {{ 3 + 3 }}
+<div>This is the same as the above:<span ng-bind="3 + 3"></span> </div>
+    </div>
+     <div style="color: {{color}}">My name is {{name}}</div> 
+
+
+     <div ng-controller="studentList">
+         The number of the students in the course is {{total_students - unofficial_quitters}}<br>
+         The number of missing students today is {{total_students - present_students}} <br>
+       The count of missing students today is {{countMissingStudents()}} <br>
+       The name of the first student is {{students[0].name}}.
+       <ul>
+           <li ng-repeat="student in students">
+               <h3>{{student.name}}</h3>
+               <h4>Is present today: <span ng-show="student.present">YES</span><span ng-hide="student.present">NO</span></h4>
+          </li>
+       </ul>
+
+       <input type="text" name="" value="Natalia" ng-model="my_name" style="background-color:greenyellow"><br>
+
+       My name is {{my_name}}
+       Yes, my name is {{my_name}}
+         <greet-me></greet-me>
+     </div>
+
+     <div ng-controller="productDetail">
+         {{product_name}}
+         {{description}}
+
+     </div>
+
+ 
+    </div>
+  
+  
+    
+</body>
+</html>

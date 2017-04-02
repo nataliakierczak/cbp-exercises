@@ -1,5 +1,4 @@
 <?php
-phpinfo();
 
 require './class.phpmailer.php';
 require './class.smtp.php';
@@ -15,7 +14,7 @@ $mail->SMTPAuth = true;                      // Enable SMTP authentication
 $mail->Username = $config['username'];      // SMTP username
 $mail->Password = $config['password'];     // SMTP password
 $mail->SMTPAutoTLS = false;                // Enable TLS encryption, `ssl` also accepted
-//$mail->Port = 587;                       // TCP port to connect to                                                       
+$mail->Port = 587;                       // TCP port to connect to                                                       
 
 $mail->setFrom('cbmailsmtp@seznam.cz', 'Natalia '); //company <address>
 $mail->addReplyTo ('useremail@address.com'); //$_POST['email']; - email address of the user

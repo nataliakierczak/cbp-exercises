@@ -1,0 +1,32 @@
+<div id="content">
+    <span>RED</span>
+    <span class="colored">BLUE</span>
+    <div class="inside">
+        <span>no color for this one</span>
+        <div>
+            <span>ORANGE</span>
+        </div>
+    </div>
+</div>
+
+<span class="colored">GREEN</span>
+
+<style>
+    #content > span {
+        background-color: red;
+    }
+    #content > span.colored {
+        background-color: blue;
+    }
+    #content div span .inside {
+        background-color: transparent;
+    }
+    #content div.inside div span {
+        background-color: orange;
+    }
+    span.colored {
+        background-color: green;
+    }
+
+</style>
+
